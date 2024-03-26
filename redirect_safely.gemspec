@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Sanitize redirect_to URLs}
   spec.description   = %q{Sanitize redirect_to URLs}
   spec.homepage      = 'https://github.com/shopify/redirect_safely'
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
+  spec.required_ruby_version = ">= 3.0.0"
 
   spec.metadata["source_code_uri"] = "https://github.com/shopify/redirect_safely"
   spec.metadata["changelog_uri"] = "https://github.com/shopify/redirect_safely/blob/master/CHANGELOG.md"
@@ -32,6 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'activesupport', '~>3.0'
   spec.add_development_dependency 'test-unit', '~>3.0'
 
-  spec.add_development_dependency 'bundler', '~> 1.14'
+  spec.add_development_dependency 'bundler', '~> 2.5'
   spec.add_development_dependency 'rake', '~> 10.0'
 end

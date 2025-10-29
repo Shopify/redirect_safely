@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 require "version"
+require "active_model"
 require "redirect_safely_validator"
 
 module RedirectSafely

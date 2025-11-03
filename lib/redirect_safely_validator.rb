@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-require 'active_model/validations'
 
 class RedirectSafelyValidator < ::ActiveModel::EachValidator
   def validate_each(record, attribute, value)

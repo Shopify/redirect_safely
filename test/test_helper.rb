@@ -6,4 +6,5 @@ require 'active_model/naming'
 require 'active_model/translation'
 require 'redirect_safely'
 require 'redirect_safely_validator'
-require 'pry'
+
+require "active_support/testing/autorun"

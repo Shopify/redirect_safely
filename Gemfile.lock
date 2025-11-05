@@ -41,7 +41,6 @@ GEM
     parser (3.3.0.5)
       ast (~> 2.4.1)
       racc
-    power_assert (1.1.6)
     pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -52,7 +51,7 @@ GEM
     rainbow (3.1.1)
     rake (13.0.1)
     regexp_parser (2.9.0)
-    rexml (3.2.6)
+    rexml (3.4.4)
     rubocop (1.62.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -68,8 +67,6 @@ GEM
       parser (>= 3.3.0.4)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
-    test-unit (3.3.5)
-      power_assert
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
@@ -81,11 +78,11 @@ PLATFORMS
 DEPENDENCIES
   activesupport (>= 6.0)
   bundler (~> 2.5)
+  minitest
   pry-byebug
   rake
   redirect_safely!
   rubocop
-  test-unit (~> 3.0)
 
 BUNDLED WITH
    2.5.7

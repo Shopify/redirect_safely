@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.version       = RedirectSafely::VERSION
   spec.authors       = ['Shopify']
   spec.email         = ['gems@shopify.com']
+  spec.license       = 'MIT'
 
   spec.summary       = %q{Sanitize redirect_to URLs}
   spec.description   = %q{Sanitize redirect_to URLs}

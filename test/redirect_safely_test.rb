@@ -149,6 +149,14 @@ class RedirectSafelyTest < ActiveSupport::TestCase
     refute RedirectSafely.safe?("https:///google.com")
   end
 
+  test "safe? returns false for scheme with a single slash (browsers normalize to authority)" do
+    refute RedirectSafely.safe?("http:/evil.com")
+    refute RedirectSafely.safe?("https:/evil.com")
+    refute RedirectSafely.safe?("http:/evil.com/path")
+    refute RedirectSafely.safe?("http:/evil.com", whitelist: ["evil.com"])
+    refute RedirectSafely.safe?("http:/sub.test.com", subdomains: [".test.com"])
+  end
+
   test "safe? returns false for an invalid URI" do
     refute RedirectSafely.safe?("http://goo<gle.com")
   end

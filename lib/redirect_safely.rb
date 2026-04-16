@@ -24,6 +24,7 @@ module RedirectSafely
       return false if uri.path =~ %r{[/\\][/\\]}
     end
     return false unless uri.scheme.nil? || ['http', 'https'].include?(uri.scheme)
+    return false if uri.scheme && uri.host.to_s.empty?
     return false unless uri.userinfo.nil?
     return false if options[:path_match] &&
     (uri.path !~ options[:path_match] || File.absolute_path(uri.path) !~ options[:path_match])

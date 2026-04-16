@@ -2,7 +2,6 @@
 
 Sanitize `return_to`-style URLs, including some edge cases that you probably missed.
 
-`RedirectSafely` is used in production and extracted from Shopify.
 
 ## Installation
 
